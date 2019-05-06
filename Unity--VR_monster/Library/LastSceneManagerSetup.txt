@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Main_copy of interaction objects.unity
+  isLoaded: 1
+  isActive: 1
