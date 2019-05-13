@@ -24,4 +24,9 @@ public class FollowScript : MonoBehaviour
 
         //rb.velocity += velcocity * gain;
     }
+
+    void forgetTarget()
+    {
+        target = null;
+    }
 }

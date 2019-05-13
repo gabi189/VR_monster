@@ -11,6 +11,7 @@ public class ForminhasController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody>();
+
     }
 
     void Update()
@@ -25,7 +26,9 @@ public class ForminhasController : MonoBehaviour
     {
         animator.SetBool("isGrabbed", true);
         rigidbody.constraints = RigidbodyConstraints.None;
-       
+
+        //FollowScript.forgetTarget;
+
     }
 
     public void onGraspEnd()
