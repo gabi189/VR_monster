@@ -55,6 +55,7 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+<<<<<<< HEAD
 Unity--VR_monster/Library/
 Unity--VR_monster/obj/Debug/build.force
 Unity--VR_monster/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
@@ -62,3 +63,7 @@ Unity--VR_monster/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache
 Unity--VR_monster/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 Unity--VR_monster/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache
 Unity--VR_monster/obj/Debug/Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+=======
+Unity--VR_monster/Temp/
+Unity--VR_monster/Library/
+>>>>>>> d3fcd314390d60676f326aeb1550378039536236
