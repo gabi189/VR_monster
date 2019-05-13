@@ -15,13 +15,17 @@ public class ForminhasController : MonoBehaviour
 
     void Update()
     {
+        //descobrir se o game object está se movendo
+        // EEE se ele não está sendo grabbed 
+        //if (isGrabbed == false) ???
+        //animator.SetBool("isRunning", true); 
     }
 
     public void onGraspBegin()
     {
         animator.SetBool("isGrabbed", true);
         rigidbody.constraints = RigidbodyConstraints.None;
-        print("oi");
+       
     }
 
     public void onGraspEnd()
@@ -30,6 +34,8 @@ public class ForminhasController : MonoBehaviour
 
         rigidbody.constraints &= RigidbodyConstraints.FreezeRotationX;
         rigidbody.constraints &= RigidbodyConstraints.FreezeRotationZ;
-        print("tchau");
+        
     }
+
+
 }

@@ -5,6 +5,11 @@ TextureImporter:
     21300000: rostos_0
     21300002: rostos_1
     21300004: rostos_2
+    21300006: rostos_3
+    21300008: rostos_4
+    21300010: rostos_5
+    21300012: rostos_6
+    21300014: rostos_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -101,7 +106,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35798bd3cbabcaf4c92e81142522304a
+      spriteID: 6eda6bf5abbae2642ac77308b467ef94
       vertices: []
       indices: 
       edges: []
@@ -121,7 +126,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77b998522afc3242b723867f71a7a74
+      spriteID: bc8648235c9996a4e9496e8b88811a11
       vertices: []
       indices: 
       edges: []
@@ -141,7 +146,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92dde7cf72255684180cc159b6f39a68
+      spriteID: 87c00dcb4507d294db0e0388340d20bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rostos_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 421.5
+        width: 140.5
+        height: 140.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc150f550c240d46b2ff24b5dee7c12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rostos_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281.5
+        width: 140.5
+        height: 140.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b17aeb1be5e534988fbb8c2ed2d5a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rostos_5
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 281.5
+        width: 140.5
+        height: 140.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8404204090a90b54db4c8cc1c07a8dd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rostos_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 281.5
+        width: 140.5
+        height: 140.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a2b24c3a209f04da059ef6aa8d0837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rostos_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 281.5
+        width: 140.5
+        height: 140.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943a44d5743643f4b9e6903ca8139048
       vertices: []
       indices: 
       edges: []
