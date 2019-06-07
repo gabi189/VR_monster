@@ -362,10 +362,13 @@ GameObject:
   - component: {fileID: 5160164265163437163}
   - component: {fileID: 1594680488975536945}
   - component: {fileID: 7783059526077107641}
-  - component: {fileID: 263474531746578297}
-  - component: {fileID: 7726547456038176422}
-  - component: {fileID: 8779189050860509445}
   - component: {fileID: 5160164265163437162}
+  - component: {fileID: 263474531746578297}
+  - component: {fileID: 8779189050860509445}
+  - component: {fileID: 5957140484271046859}
+  - component: {fileID: 7192353911173382332}
+  - component: {fileID: 8630460683890092882}
+  - component: {fileID: 8538476669694949151}
   m_Layer: 0
   m_Name: Cubinho
   m_TagString: Untagged
@@ -418,6 +421,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
+--- !u!95 &5160164265163437162
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160164265163437161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ae60bc489a9a3d84ab50c316e96307a9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8d47a519d0fd1274dae8acf3dac9915a, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &263474531746578297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,20 +452,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ea2389c8968f6d4fbbe1373f68e6864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7726547456038176422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5160164265163437161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb0784683d920a4aa927fc696616633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  gain: 0.05
 --- !u!114 &8779189050860509445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,25 +516,67 @@ MonoBehaviour:
             m_CallState: 2
         m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
---- !u!95 &5160164265163437162
-Animator:
-  serializedVersion: 3
+--- !u!114 &5957140484271046859
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5160164265163437161}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ae60bc489a9a3d84ab50c316e96307a9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8d47a519d0fd1274dae8acf3dac9915a, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0828880e5109714ca68ebdaba2115d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  elasticConstant: 10
+  damping: 7
+  maximumForceToApply: 100
+  minDistanceToFollow: 0.4
+  nullVerticalError: 1
+--- !u!114 &7192353911173382332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160164265163437161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123b62ef0d3be044ab8ee32cce27d138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerOfMass: {x: 0, y: -0.5, z: 0}
+--- !u!114 &8630460683890092882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160164265163437161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54a339249db23d4e9e5886fe4f8bcac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  elasticConstant: 0.5
+  damping: 0.1
+  maximumTorqueToApply: 200
+  minAngleToFollow: 3
+  nullVerticalError: 1
+--- !u!114 &8538476669694949151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160164265163437161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0334d736884bb6c4f94f0060f73452cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5160164265402044334
 GameObject:
   m_ObjectHideFlags: 0
