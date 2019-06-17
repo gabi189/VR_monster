@@ -28,7 +28,7 @@ public class ForminhasController : MonoBehaviour
     void Awake()
     {
         source = GetComponent<AudioSource>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
 
         
     }
@@ -78,6 +78,7 @@ public class ForminhasController : MonoBehaviour
         
         //source.PlayOneShot(segurado, 1);
         //desligar o TargetFollower, o look at target e o stay upwards
+
     }
 
     public void onGraspEnd()

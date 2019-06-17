@@ -315,6 +315,7 @@
     <Compile Include="Assets\Scripts\FollowScript.cs" />
     <Compile Include="Assets\Scripts\ForminhasController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\HandColorOnGrasp.cs" />
     <Compile Include="Assets\Scripts\LookAtTarget.cs" />
     <Compile Include="Assets\Scripts\SetHeight.cs" />
     <Compile Include="Assets\Scripts\StayUpwards.cs" />
