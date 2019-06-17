@@ -29,6 +29,8 @@ public class ForminhasController : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+
+        
     }
 
 
