@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3193,6 +3193,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114252805458954098, guid: 9361ab6d13ee87644bc370bccb524144,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114252805458954098, guid: 9361ab6d13ee87644bc370bccb524144,
+        type: 3}
+      propertyPath: _deviceJoystickTokens
+      value: oculus touch right
+      objectReference: {fileID: 0}
     - target: {fileID: 4911511504652324, guid: 9361ab6d13ee87644bc370bccb524144, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0801
@@ -3224,16 +3234,6 @@ PrefabInstance:
     - target: {fileID: 4911511504652324, guid: 9361ab6d13ee87644bc370bccb524144, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114252805458954098, guid: 9361ab6d13ee87644bc370bccb524144,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114252805458954098, guid: 9361ab6d13ee87644bc370bccb524144,
-        type: 3}
-      propertyPath: _deviceJoystickTokens
-      value: oculus touch right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9361ab6d13ee87644bc370bccb524144, type: 3}
@@ -4738,36 +4738,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: _enableObjectsOnlyWhenTracked.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[2]
-      value: 
-      objectReference: {fileID: 1831449267}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[3]
-      value: 
-      objectReference: {fileID: 1929429915}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[4]
-      value: 
-      objectReference: {fileID: 2034679925}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
-        type: 3}
-      propertyPath: _deviceJoystickTokens
-      value: oculus touch left
-      objectReference: {fileID: 0}
     - target: {fileID: 4829828358790816, guid: 40e809833d307ef4983e1e71fe56e23b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0801
@@ -4799,6 +4769,36 @@ PrefabInstance:
     - target: {fileID: 4829828358790816, guid: 40e809833d307ef4983e1e71fe56e23b, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: _enableObjectsOnlyWhenTracked.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[2]
+      value: 
+      objectReference: {fileID: 1831449267}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[3]
+      value: 
+      objectReference: {fileID: 1929429915}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: _enableObjectsOnlyWhenTracked.Array.data[4]
+      value: 
+      objectReference: {fileID: 2034679925}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114205148317838364, guid: 40e809833d307ef4983e1e71fe56e23b,
+        type: 3}
+      propertyPath: _deviceJoystickTokens
+      value: oculus touch left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40e809833d307ef4983e1e71fe56e23b, type: 3}
@@ -5501,6 +5501,10 @@ PrefabInstance:
     - target: {fileID: 1404367628755344, guid: 2276723046d707c4f94d431ceb80ab92, type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430945870454064, guid: 2276723046d707c4f94d431ceb80ab92, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013336878276, guid: 2276723046d707c4f94d431ceb80ab92, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6552,10 +6556,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0000012
       objectReference: {fileID: 0}
-    - target: {fileID: 4430945870454064, guid: 2276723046d707c4f94d431ceb80ab92, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1775115217315164, guid: 2276723046d707c4f94d431ceb80ab92, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -7464,6 +7464,43 @@ PrefabInstance:
       objectReference: {fileID: 1411835574}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cf21f4867fcfd94aab4c4e90643e9f5, type: 3}
+--- !u!1 &8382756489754433557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8382756489754433557, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8382756490286021895}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8382756489754433558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8382756489754433557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e82c5cdf3206a4a9972e7a7c982bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatLayersToDetect:
+    serializedVersion: 2
+    m_Bits: 0
+  gameObjectsToIgnore: []
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &8382756490286021895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7545,5 +7582,85 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1007466296}
+    - target: {fileID: 8382756489721884814, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -15.153753
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884814, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.72468495
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884814, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.728032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884804, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 22.640377
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884804, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -1.2379458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884804, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.10714173
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884806, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -9.093307
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884806, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.29193187
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884806, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 2.715294
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884800, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 62.66918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884800, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 18.389439
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884800, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 20.066998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884802, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -5.0668707
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884802, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.031363938
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382756489721884802, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.71769303
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583815143557731963, guid: 0f18d835ebd6a2f4eae2527b454879cf,
+        type: 3}
+      propertyPath: floatName
+      value: Running
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f18d835ebd6a2f4eae2527b454879cf, type: 3}
