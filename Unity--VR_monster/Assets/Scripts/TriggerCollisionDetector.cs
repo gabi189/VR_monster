@@ -29,13 +29,13 @@ public class TriggerCollisionDetector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //print("update!!!!!!");
     }
 
     /// <summary>
@@ -59,11 +59,12 @@ public class TriggerCollisionDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        print("Enter IN" + other.name);
         if (ShouldIgnoreDetection(other.gameObject))
             return;
 
         onTriggerEnter.Invoke();
-        //print("Enter");
+        print("Enter OUT");
     }
 
     private void OnTriggerStay(Collider other)
@@ -77,10 +78,12 @@ public class TriggerCollisionDetector : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        print("Exit IN" + other.name);
+
         if (ShouldIgnoreDetection(other.gameObject))
             return;
 
         onTriggerExit.Invoke();
-        //print("Exit");
+       print("Exit OUT");
     }
 }
