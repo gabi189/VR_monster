@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public GameObject Intro;
-    public GameObject Lobo1;
+    public GameObject TmIdle1;
     public float tempo1;
 
     private bool isCoroutineExecuting = false;
@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         StartCoroutine(ExecuteAfterTime(tempo1));
-        Lobo1.SetActive(false);
+        TmIdle1.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,7 +22,9 @@ public class GameController : MonoBehaviour
     {
              
     }
+
     
+    // Essa seria a segunda timeline a ser tocada
     IEnumerator ExecuteAfterTime(float time)
     {
         if (isCoroutineExecuting)
@@ -35,9 +37,8 @@ public class GameController : MonoBehaviour
 
         // Code to execute after the delay
         //print("delay");
-        Lobo1.SetActive(true);
-
+        TmIdle1.SetActive(true);
         isCoroutineExecuting = false;
     }
-
+    
 }

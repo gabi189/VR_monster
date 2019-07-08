@@ -45,8 +45,7 @@ public class ForminhasController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 8
-            && !isGrounded)
+        if (collision.gameObject.layer == 8)
         {
             isGrounded = true;
             source.PlayOneShot(impacto, 0.2F);
@@ -61,8 +60,7 @@ public class ForminhasController : MonoBehaviour
 
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.layer == 8
-            && isGrounded)
+        if (collision.gameObject.layer == 8)
         {
             isGrounded = false;
             source.PlayOneShot(levantado, 0.2F);
