@@ -23,8 +23,11 @@ public class TriggerCollisionDetector : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent onTriggerEnter;
-    public UnityEvent onTriggerStay;
+    //public UnityEvent onTriggerStay;
     public UnityEvent onTriggerExit;
+    public float triggerEnterEventWait;
+    //public float triggerStayEventWait;
+    public float triggerExitEventWait;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +38,7 @@ public class TriggerCollisionDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print("update!!!!!!");
+        
     }
 
     /// <summary>
@@ -59,31 +62,58 @@ public class TriggerCollisionDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Enter IN" + other.name);
+        //print("Enter IN" + other.name);
         if (ShouldIgnoreDetection(other.gameObject))
             return;
 
-        onTriggerEnter.Invoke();
-        print("Enter OUT");
+        StopAllCoroutines();
+        StartCoroutine("InvokeTriggerEnterEventCoroutine");
+
+        //onTriggerEnter.Invoke();
+        //print("Enter OUT");
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (ShouldIgnoreDetection(other.gameObject))
-            return;
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (ShouldIgnoreDetection(other.gameObject))
+    //        return;
 
-        onTriggerStay.Invoke();
-        //print("Stay");
-    }
+    //    StopAllCoroutines();
+    //    StartCoroutine("InvokeTriggerStayEventCoroutine");
+
+    //    //onTriggerStay.Invoke();
+    //    //print("Stay");
+    //}
 
     private void OnTriggerExit(Collider other)
     {
-        print("Exit IN" + other.name);
+        //print("Exit IN" + other.name);
 
         if (ShouldIgnoreDetection(other.gameObject))
             return;
 
+        StopAllCoroutines();
+        StartCoroutine("InvokeTriggerExitEventCoroutine");
+
+        //onTriggerExit.Invoke();
+        //print("Exit OUT");
+    }
+
+    IEnumerator InvokeTriggerEnterEventCoroutine()
+    {
+        yield return new WaitForSeconds(triggerEnterEventWait);
+        onTriggerEnter.Invoke();
+    }
+
+    //IEnumerator InvokeTriggerStayEventCoroutine()
+    //{
+    //    yield return new WaitForSeconds(triggerStayEventWait);
+    //    onTriggerStay.Invoke();
+    //}
+
+    IEnumerator InvokeTriggerExitEventCoroutine()
+    {
+        yield return new WaitForSeconds(triggerExitEventWait);
         onTriggerExit.Invoke();
-       print("Exit OUT");
     }
 }

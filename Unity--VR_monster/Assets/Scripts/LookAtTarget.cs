@@ -19,10 +19,21 @@ public class LookAtTarget : MonoBehaviour
     float angle = 0;
     float lastAngle = 0;
 
+    float aux;
+    float timeToReachMaximumTorque = 2;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        if (aux < 1)
+        {
+            aux += Time.deltaTime / timeToReachMaximumTorque;
+        }
     }
 
     // Update is called once per frame
@@ -56,5 +67,10 @@ public class LookAtTarget : MonoBehaviour
             torque = torque.normalized * maximumTorqueToApply;
 
         rb.AddTorque(torque);
+    }
+
+    private void OnEnable()
+    {
+        aux = 0f;
     }
 }

@@ -19,4 +19,11 @@ public class CenterOfMassConfigurator : MonoBehaviour
     {
         rb.centerOfMass = centerOfMass;
     }
+
+    void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(this.transform.position + centerOfMass, 0.01f);
+    }
 }
