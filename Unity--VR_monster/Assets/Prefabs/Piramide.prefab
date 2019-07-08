@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 6090086999785614994}
   - component: {fileID: 574200155}
   - component: {fileID: 4717272131284793087}
+  - component: {fileID: 6090086999785614996}
   m_Layer: 12
   m_Name: Piramide
   m_TagString: Untagged
@@ -782,6 +783,25 @@ MonoBehaviour:
   rb: {fileID: 9158695138682394435}
   animator: {fileID: 5159388796945367835}
   floatName: Running
+--- !u!95 &6090086999785614996
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090086999785614995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8048272122598603254
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,13 +963,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8370111594938919851}
-  m_LocalRotation: {x: -0.258819, y: -0, z: -0, w: 0.9659259}
-  m_LocalPosition: {x: 0.000012653396, y: 0.0056, z: 0.1071}
+  m_LocalRotation: {x: -0.300581, y: -0.008015571, z: -0.0025396398, w: 0.9537192}
+  m_LocalPosition: {x: 0.003, y: 0.024, z: 0.098}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 5159388796954471677}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -34.986, y: -0.96300006, z: -0.002}
 --- !u!212 &894376330268487581
 SpriteRenderer:
   m_ObjectHideFlags: 0
